@@ -1,0 +1,13 @@
+version: "3.7"
+services:
+  application:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5000:3000"
+    container_name: node-sites-api
+    image: sites-api
+    environment:
+      HOST: 0.0.0.0
+      PORT: 3000
