@@ -1,5 +1,5 @@
 const axios = require("axios");
-const RecordSet = require("../entity/record_set");
+const RecordSet = require("../structures/record_set");
 require("dotenv").config();
 const ACCOUNT_ID = process.env.ACCOUNT_ID;
 const CF_API_KEY = process.env.CF_API_KEY;
